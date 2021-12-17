@@ -3,7 +3,7 @@ from django.contrib import admin
 from django.db.models import fields
 from .models import Carousel, Post, AboutText, Testimonial, EntranceAbout, ServiceInfo
 
-
+#Carousel register to Admin dashboard
 @admin.register(Carousel)
 class AdminCarousel(admin.ModelAdmin):
     list_display = [
