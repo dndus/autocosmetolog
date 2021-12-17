@@ -1,0 +1,35 @@
+{% extends 'layouts/base.html' %}
+{% load static i18n %}
+
+{% block content %}
+<div class="text-container">
+    {% for row in carousel %}
+    {% if row.page == 'CAREER' %}
+    <img src="{{ row.image.url }}" class="img-fluid vw-100" alt="cosmetolog">
+    <div class="index-text">
+
+        <p>
+            {{ row.title }}
+        </p>
+    </div>
+    {% endif %}
+    {% endfor %}
+</div>
+<div class="container-fluid">
+    <div class="row text-center text-font">
+        <div class="col padding">
+            <div class="info-bg1 ">
+                <a class="text-white" href="{% url 'location' %}">{% trans "Локации" %}</a>
+            </div>
+        </div>
+        <div class="col padding">
+            <div class="info-bg2">
+                <a class="text-white" href="tel:+998330040770">{% trans "Заказ" %}</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container justify-content-center">
+{% include 'widgets/post.html' %}
+</div>
+{% endblock %}

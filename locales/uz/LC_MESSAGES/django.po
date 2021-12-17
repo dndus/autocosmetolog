@@ -1,0 +1,108 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-04 14:26+0500\n"
+"PO-Revision-Date: 2021-12-04 14:26+0500\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: uz\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 2.3\n"
+
+#: main/views.py:6
+msgid "Главный"
+msgstr "Bosh sahifa"
+
+#: main/views.py:15 templates/layouts/base.html:35 templates/service/air.html:7
+#: templates/service/ceramic.html:7 templates/service/dry.html:7
+msgid "Услуга"
+msgstr "Xizmatlar"
+
+#: main/views.py:23 templates/layouts/base.html:38 templates/main/about.html:22
+#: templates/main/career.html:22 templates/main/service.html:22
+msgid "Локации"
+msgstr "Joylar"
+
+#: main/views.py:31 templates/layouts/base.html:41
+msgid "О нас"
+msgstr "Biz haqimizda"
+
+#: main/views.py:41 templates/layouts/base.html:44
+msgid "Портфолио"
+msgstr "Portifolia"
+
+#: main/views.py:49 templates/main/index.html:78 templates/main/service.html:37
+#: templates/service/air.html:10
+msgid "Кондиционер"
+msgstr "Konditsioner"
+
+#: main/views.py:56 templates/main/index.html:88 templates/main/service.html:47
+#: templates/service/ceramic.html:10
+msgid "Керамика"
+msgstr "Keramika"
+
+#: main/views.py:64 templates/main/index.html:98 templates/main/service.html:57
+#: templates/service/dry.html:10
+msgid "Химчистка"
+msgstr "Ximchistka"
+
+#: templates/layouts/base.html:77
+msgid "Программист"
+msgstr "Dasturchi"
+
+#: templates/layouts/base.html:78
+msgid "Сообщить об ошибке"
+msgstr "Xato haqida habar berish"
+
+#: templates/layouts/base.html:85
+msgid "О компании"
+msgstr "Biz haqimizda"
+
+#: templates/main/about.html:27 templates/main/career.html:27
+#: templates/main/index.html:9 templates/main/location.html:22
+#: templates/main/service.html:27
+msgid "Заказ"
+msgstr "Buyurtma berish"
+
+#: templates/main/index.html:29
+msgid "Профессионалов"
+msgstr "Professionallar"
+
+#: templates/main/index.html:70
+#, fuzzy
+#| msgid "Наши работы"
+msgid "Наши услуги"
+msgstr "Bizning ishlar"
+
+#: templates/main/index.html:106
+msgid "Наше местоположение"
+msgstr "Manzil"
+
+#: templates/service/air.html:11 templates/service/ceramic.html:11
+#: templates/service/dry.html:11
+msgid "Наши работы"
+msgstr "Bizning ishlar"
+
+#~ msgid "Почему Auto Cosmetolog - это ваш доверенный автосервис"
+#~ msgstr "Nima uchun Auto Cosmetolog sizning ishonchli avtomobil xizmatingizdir"
+
+#~ msgid "Auto Cosmetolog - это комплексная ремонтная мастерская, принадлежащая вашей семье. С 2015 года мы помогли тысячам людей сохранить бесперебойную работу своих транспортных средств."
+#~ msgstr "Avtokosmetolog - bu sizning oilaviy do'koningiz. 2015-yildan beri biz minglab odamlarga transport vositalarining muammosiz ishlashiga yordam berdik."
+
+#~ msgid "Контакт"
+#~ msgstr "Bog'lanish"
+
+#~ msgid "Место нахождения"
+#~ msgstr "Manzil"
+
+#~ msgid "Эл. адрес"
+#~ msgstr "Elektron pochta"

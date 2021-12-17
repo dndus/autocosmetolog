@@ -1,0 +1,29 @@
+{% extends 'layouts/base.html' %}
+{% load static i18n %}
+{% block content %}
+<div class="container pt-3">
+    <div class="cardcontainer">
+        <div class="photo"> <img src="{% static 'image/air.jpg' %}">
+            <div class="photos">{% trans 'Услуга' %}</div>
+        </div>
+        <div class="content">
+            <p class="txt4">{% trans 'Химчистка' %}</p>
+            <a class="txt5 nav-link">{% trans 'Наши работы' %}</a>
+        </div>
+    </div>
+</div>
+<hr>
+<div class="container">
+    <div class="row d-flex justify-content-center ps-5">
+        {% for post in posts %}
+        <div class="col-12 col-md-6 col-lg-4 mb-2">
+            <div class="card">
+                {% if post.work == 'Dry' %}
+                <img src="{{ post.image.url }}" width="300px" />
+                {% endif %}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

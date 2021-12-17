@@ -1,0 +1,64 @@
+{% extends 'layouts/base.html' %}
+{% load static i18n %}
+
+{% block content %}
+<div class="text-container">
+    {% for row in carousel %}
+    {% if row.page == 'SERVICE' %}
+    <img src="{{ row.image.url }}" class="img-fluid vw-100" alt="cosmetolog">
+    <div class="index-text">
+
+        <p>
+            {{ row.title }}
+        </p>
+    </div>
+    {% endif %}
+    {% endfor %}
+</div>
+<div class="container-fluid">
+    <div class="row text-center text-font">
+        <div class="col padding">
+            <div class="info-bg1 ">
+                <a class="text-white" href="#">{% trans "Локации" %}</a>
+            </div>
+        </div>
+        <div class="col padding">
+            <div class="info-bg2">
+                <a class="text-white" href="tel:+998330040770">{% trans "Заказ" %}</a>
+            </div>
+        </div>
+    </div>
+    <div class="row ps-5 pb-3 text-center">
+        <div class="col-lg-4 col-12 pt-3">
+            <a href="{% url 'air' %}" class="rmfilter nav-link">
+                <div class="card" style="width: 18rem;">
+                    <img src="{% static 'image/ceramic.jpg'%}" class="card-img-top filterimg" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">{% trans 'Кондиционер'%}</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-lg-4 col-12 pt-3">
+            <a href="{% url 'ceramic' %}" class="rmfilter nav-link">
+                <div class="card" style="width: 18rem;">
+                    <img src="{% static 'image/ceramic.jpg'%}" class="card-img-top filterimg" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">{% trans 'Керамика' %}</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-lg-4 col-12 pt-3">
+            <a href="dry" class="rmfilter nav-link">
+                <div class="card" style="width: 18rem;">
+                    <img src="{% static 'image/ceramic.jpg'%}" class="card-img-top filterimg" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">{% trans 'Химчистка' %}</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+{% endblock %}

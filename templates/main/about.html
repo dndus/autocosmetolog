@@ -1,0 +1,60 @@
+{% extends 'layouts/base.html' %}
+{% load static i18n %}
+
+{% block content %}
+<div class="text-container">
+    {% for row in carousel %}
+    {% if row.page == 'ABOUT' %}
+    <img src="{{ row.image.url }}" class="img-fluid vw-100" alt="cosmetolog">
+    <div class="index-text">
+
+        <p>
+            {{ row.title }}
+        </p>
+    </div>
+    {% endif %}
+    {% endfor %}
+</div>
+<div class="container-fluid">
+    <div class="row text-center text-font">
+        <div class="col padding">
+            <div class="info-bg1 ">
+                <a class="text-white" href="">{% trans "Локации" %}</a>
+            </div>
+        </div>
+        <div class="col padding">
+            <div class="info-bg2">
+                <a class="text-white" href="tel:+998330040770">{% trans "Заказ" %}</a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                {% for text in entran %}
+                    <h3 class="serviceh3">{{ text.entrance }}</h3>
+                    <div class="container">
+                        <div class="text-area">
+                            <p>
+                                {{ text.entrantext }}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="secondpageser">
+            <div class="container">
+                <div class="text-start">
+                    {% for post in about %}
+                    <h3 class="serviceh3">{{ post.h3 }}</h3>
+                    <p>
+                       {{ post.text }}
+                    </p>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
